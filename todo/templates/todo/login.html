@@ -1,12 +1,12 @@
 {% extends 'todo/base.html' %}
 
 {% block content %}
-<h1>Sign Up</h1>
+<h1>Login</h1>
 <h2>{{ error }}</h2>
-<form method="POST" action="{% url 'signup' %}">
+<form method="POST" action="{% url 'loginuser' %}">
 {% csrf_token %}
 {{ form.as_p}}
-<button type="submit">Sign Up</button>
+<button type="submit">Login</button>
 </form>
 
 {% endblock %}
